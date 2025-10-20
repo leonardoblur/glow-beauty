@@ -340,6 +340,19 @@ img {
     box-shadow: var(--shadow-lg);
 }
 
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
 .beauty-gradient-alt {
     background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
 }
