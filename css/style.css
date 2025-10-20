@@ -555,10 +555,41 @@ img {
     margin-bottom: var(--spacing-md);
 }
 
+.community-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.community-card:hover {
+    transform: scale(1.05);
+}
+
 .community-card .image-placeholder {
     height: 280px;
     border-radius: var(--border-radius);
     font-size: 1rem;
+}
+
+.community-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.community-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    padding: var(--spacing-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .community-cta {
